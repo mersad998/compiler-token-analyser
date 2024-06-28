@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+| state | ;     | +     | *     | (     | )     | =     | >     | <     | if    | else  | then  | int   | char  | [a-z] | [0-9] | space | $     | .     | !     |
+|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+| 0     | 1     | 2     | 3     | 4     | 5     | 6     | 9     | 12    | 15    | 16    | 17    | 18    | 19    | 20    | 22    | 0     | 27    | Error | 27    |
+| 1     |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 2     |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 3     |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 4     |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 5     |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 6     | 8     | 8     | 8     | 8     | 8     | 7     | 8     | 8     | 8     | 8     | 8     | 8     | 8     | 8     | 8     | 8     | Error | 8     | 8     |
+| 7     |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 8     |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 9     | 11    | 11    | 11    | 11    | 11    | 10    | 11    | 11    | 11    | 11    | 11    | 11    | 11    | 11    | 11    | 11    | Error | 11    | 11    |
+| 10    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 11    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 12    | 14    | 14    | 14    | 14    | 14    | 13    | 14    | 14    | 14    | 14    | 14    | 14    | 14    | 14    | 14    | 14    | Error | 14    | 14    |
+| 13    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 14    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 15    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 16    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 17    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 18    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 19    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 20    | 21    | 21    | 21    | 21    | 21    | 21    | 21    | 21    | 21    | 21    | 21    | 21    | 21    | 20    | 20    | 21    | Error | 21    | 21    |
+| 21    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 22    | 26    | 26    | 26    | 26    | 26    | 26    | 26    | 26    | 26    | 26    | 26    | 26    | 26    | 26    | 22    | 26    | Error | 23    | 26    |
+| 23    | Error | Error | Error | Error | Error | Error | Error | Error | Error | Error | Error | Error | Error | Error | 24    | Error | Error | Error | Error |
+| 24    | 25    | 25    | 25    | 25    | 25    | 25    | 25    | 25    | 25    | 25    | 25    | 25    | 25    | 25    | 24    | 25    | Error | 25    | 25    |
+| 25    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 26    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 27    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| 28    | Error | Error | Error | Error | Error | 29    | Error | Error | Error | Error | Error | Error | Error | Error | Error | Error | Error | Error | Error |
+| 29    |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
